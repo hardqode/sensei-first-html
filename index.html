@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Аренда коттеджей и домой в Москве и Подмосковье || domiktut.ru</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
@@ -17,6 +16,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/footable.bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/rating.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -78,7 +78,7 @@
                 </li>
             </a>
             <a href="#">
-                <li class="list-group-item">
+                <li class="list-group-item" id="active_sub_menu">
                     <img src="img/building.png" alt="">
                     <span class="sub_menu_name">Объекты</span>
 
@@ -803,7 +803,23 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 <script src="js/footable.min.js"></script>
+<script src="js/rating.min.js"></script>
 <script>
+    // target element
+    var el = document.querySelector('#el');
+
+    // current rating, or initial rating
+    var currentRating = 3;
+
+    // max rating, i.e. number of stars you want
+    var maxRating= 5;
+
+    // callback to run after setting the rating
+    var callback = function(rating) { alert(rating); };
+
+    // rating instance
+    var myRating = rating(el, currentRating, maxRating, callback);
+
     $(function () {
         var $menu = $("#menu");
         $line = $("#line"),
@@ -837,8 +853,10 @@
 
     });
     $('#border_menu a').on('click', function () {
-        $('#border_menu li .active_circle').remove()
+        $('#border_menu li .active_circle').remove();
+
         $(this).find('li').prepend('<span class="active_circle"></span>');
+
 
     });
     $('#sub_menu_button').on('click',function () {

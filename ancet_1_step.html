@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Include Required Prerequisites -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/footable.bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.css">
+    <link rel="stylesheet" href="css/rating.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<div class="row">
+    <nav class="col-10 navbar navbar-expand-md">
+        <div class="row">
+            <div class="col-12 nav_logo"><a href="#">SENSEI</a></div>
+            <div class="col-12 nav_logo_span"><span>решения для риэлторов</span></div>
+        </div>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav  main_header">
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary navigation_burger_button" id="sub_menu_button"><i
+                            class="material-icons">menu</i>
+                    </button>
+                </li>
+                <li class="nav-item top_menu_label">
+                    <img src="img/gora.png" width="29" height="29"/><label>Агентство &#171;Гора&#187; </label>
+                </li>
+                <li class="nav-item ">
+                    <img src="img/bell.png" alt="" width="20" height="24">
+                </li>
+            </ul>
+
+
+        </div>
+
+    </nav>
+    <div class="col-2 self_data_block">
+        <div class="row">
+            <div class="col-2 top_avatar">
+                <img alt="">
+            </div>
+            <div class="ml-2 col-7 top_name">
+                <span>Иванов И. В.</span>
+            </div>
+            <div class="col-2 chat_icon_block">
+                <img src="img/chat.png" alt="">
+                <span class="notification">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1 sub_menu">
+        <ul class="list-group" id="border_menu">
+            <a href="#">
+                <li class="list-group-item" id="active_sub_menu">
+                    <span class="active_circle"></span>
+                    <img src="img/broker.png" alt=""><br>
+                    <span class="sub_menu_name">Дела</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item" >
+                    <img src="img/building.png" alt="">
+                    <span class="sub_menu_name">Объекты</span>
+
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item ">
+                    <img src="img/broker.png" alt="">
+                    <span class="sub_menu_name">Клиенты</span>
+
+                </li>
+            </a>
+            <a href="#  ">
+                <li class="list-group-item ">
+                    <img src="img/house-price.png" alt="">
+                    <span class="sub_menu_name">Ипотека</span>
+
+                </li>
+            </a>
+            <li class="list-group-item ">
+
+            </li>
+
+        </ul>
+    </div>
+    <div class="col-10 wrapper" id="main-wrapper">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4">
+                            <h5 class="header_text">Заявка на кредит</h5>
+                        </div>
+                        <div class="ml-auto col-6">
+                            <ul class="top_breadcumps">
+                                <li class="active">Заполнение анкеты</li>
+                                <li>Загрузка документов</li>
+                                <li>Отправить заявку в банк</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 main-wrapper">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="row ancets_inputs">
+                                        <h6 class="col-12 bold wrapper_header">Заемщик</h6>
+                                        <div class="main-inner-wrapper">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <input class="" type="text" placeholder="Фамилия">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Имя">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Отчество">
+                                                </div>
+                                                <div class="col-4 full-width-input" id="datastart-container">
+                                                    <input type="text" class="form-control" placeholder="Дата рождения"
+                                                           data-date-end-date="0d">
+                                                </div>
+                                                <div class="row" style="height: 45px">
+                                                    <div class="col-6">
+                                                        <div class="form-check form-check-inline reset-input secondary_input">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="radio"
+                                                                        value="option1">
+                                                            </label>
+                                                            <span>М</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-check form-check-inline reset-input secondary_input">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="radio"
+                                                                        value="option2">
+                                                            </label>
+                                                            <span>Ж</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 ">
+                                                    <input type="text" placeholder="Пасспорт">
+                                                </div>
+                                                <div class="col-12 full-width-input">
+                                                    <input type="text" placeholder="Кем выдан">
+                                                </div>
+                                                <div class="col-3 full-width-input">
+                                                    <input type="text" placeholder="Когда выдан">
+                                                </div>
+
+                                                <div class="col-3 full-width-input" style="margin-left: -3%;">
+                                                    <input type="text" placeholder="Код подразделения">
+                                                </div>
+                                                <div class="col-6"></div>
+                                                <div class="w-100 divider_with_border"></div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Телефон">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Email">
+                                                    <!--<button class="my-btn">перейти к загрузке документов</button>-->
+                                                </div>
+                                                <div class="w-100 divider_with_border"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Семейное положение</h6>
+                                                </div>
+                                                <div class="col-4 ancet_select" >
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Женат\Замужем</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <div class="form-check form-check-inline reset-input secondary_input">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                   id="inlineCheckbox1" value="option1">
+                                                        </label>
+                                                        <span>Наличие брачного контракта</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="col-12 bold wrapper_header">Параметры кредита</h6>
+                                        <div class="main-inner-wrapper">
+                                            <div class="row">
+                                                <div class="col-4 ">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Объект покупки</h6>
+                                                </div>
+                                                <div class="col-8  ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Первичный рынок (Приобретение
+                                                            строящегося
+                                                            жилья)
+                                                        </option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 ">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Тип недвижимости</h6>
+                                                </div>
+                                                <div class="col-8  ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Квартира</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Пасспорт">
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Пасспорт">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Пасспорт">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" placeholder="Пасспорт">
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="col-12 bold mt wrapper_header">Информация по объекту</h6>
+                                        <div class="main-inner-wrapper">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-check form-check-inline reset-input secondary_input">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                   id="inlineCheckbox1" value="option1">
+                                                        </label>
+                                                        <span>Наличие брачного контракта</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="my-btn">перейти к загрузке документов</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+<script src="js/footable.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/rating.min.js"></script>
+<script>
+    // target element
+    var el = document.querySelector('#el');
+
+    // current rating, or initial rating
+    var currentRating = 3;
+
+    // max rating, i.e. number of stars you want
+    var maxRating= 5;
+
+    // callback to run after setting the rating
+    var callback = function(rating) { alert(rating); };
+
+    // rating instance
+    var myRating = rating(el, currentRating, maxRating, callback);
+
+    $(function () {
+        var $menu = $("#menu");
+        $line = $("#line"),
+            $indicator = true,
+            $menuli = $("#menu li"),
+            $active = $menu.find(".active"),
+            default_pos = $active.offset().left - $menu.offset().left + 20,
+            default_width = $active.outerWidth() - 30;
+
+        $line.css({left: default_pos, width: default_width});
+
+        $menuli.hover(function () {
+            if (this === $active.get(0)) return;
+            var self = $(this);
+            var diff = self.offset().left - $menu.offset().left;
+            $line.stop().animate({
+                width: self.outerWidth() - 43,
+                left: diff + 20
+            }, 400);
+        }, function () {
+            if (this === $active.get(0)) return;
+            $line.stop().animate({
+                width: default_width,
+                left: default_pos
+            }, 400);
+        });
+        $menuli.on('click', function () {
+            this.addClass('active');
+            $active.get(0).removeClass('active');
+        });
+
+    });
+    $('#border_menu a').on('click', function () {
+        $('#border_menu li .active_circle').remove();
+        $(this).find('li').attr('id','active_sub_menu');
+        $(this).find('li').prepend('<span class="active_circle"></span>');
+//выделение активного меню доработать
+    });
+    $('#sub_menu_button').on('click',function () {
+        $('.sub_menu').toggle();
+        if ($('.sub_menu').attr('display') === 'none'){
+            $('#main-wrapper').removeClass('col-10');
+            $('#main-wrapper').addClass('col-12');
+
+        } else {
+            $('#main-wrapper').removeClass('col-12');
+            $('#main-wrapper').addClass('col-10');
+
+
+        }
+    });
+
+    $('#status_btn').on('click',function () {
+        $('#list_of_progress').toggle();
+    });
+
+    $('#datastart-container input').datepicker({
+        startDate: '01/01/1913',
+        orientation: "bottom left",
+        language: "ru"
+    });
+
+
+</script>
+</body>
+</html>
