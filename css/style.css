@@ -482,6 +482,129 @@ a {
 .mmt {
     margin-top: -10px;
 }
+.booster{
+    padding:25px 21px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #8caaf3;
+    box-shadow: 2.1px 2.1px 9px 0 rgba(56, 56, 56, 0.15);
+}
+.booster p:nth-child(1){
+    font-family: Circe;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: #f6f8f9;
+    margin-bottom: 25px;
+}
+.booster p:nth-child(2){
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0.4;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.booster p:nth-child(3){
+    font-size: 18px;
+    line-height: 1.11;
+    color: #565555;
+    margin-bottom: 6px;
+}
+.booster p:nth-child(4){
+    font-size: 14px;
+    line-height: 1.43;
+    color: #e7e5e5;
+    margin-bottom: 0;
+}
+.opportunities_header{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: left;
+    color: #4a4a4a;
+}
+.opportunities_text{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #4a4a4a;
+}
+.price_and_order{
+    text-align: right;
+}
+.price_and_order span:first-child{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #979696;
+    margin-right: 12px;
+}
+.price_and_order span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #4a4a4a;
+    margin-right: 52px;
+}
+.price_and_order button{
+    padding:5px 15px;
+    text-transform: uppercase;
+    border-radius: 17px;
+    background-color: #6f859b;
+    border: 0;
+    box-shadow: 2.1px 2.1px 15px 0 rgba(82, 100, 118, 0.2);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    text-align: left;
+    color: #ffffff;
+    outline:none;
+}
+.price_and_order button:hover, .price_and_order button:active{
+    background: #349875;
+
+}
+.table_header{
+    border-radius: 2px;
+    background-color: #f6f8f9;
+    border-top: 0;
+}
+.table_header tr th{
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    color: #4a4a4a;
+
+}
+.table_row_banks td{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight:bold;
+    text-align: center;
+}
+.table_row_banks button{
+    padding: 0px 14px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: solid 1.5px #d1d1d1;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+
+}
+.table_row_banks td.accepted{
+    text-transform: uppercase;
+    color: #5dbda8;
+}
+.table_row_banks td.rejected{
+    color: #cc666d;
+    text-transform: uppercase;
+
+}
 .spisok_doc{
     padding-left:30px;
     font-size: 16px;

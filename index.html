@@ -78,7 +78,7 @@
                 </li>
             </a>
             <a href="#">
-                <li class="list-group-item" id="active_sub_menu">
+                <li class="list-group-item">
                     <img src="img/building.png" alt="">
                     <span class="sub_menu_name">Объекты</span>
 
@@ -852,9 +852,10 @@
         });
 
     });
+    
     $('#border_menu a').on('click', function () {
         $('#border_menu li .active_circle').remove();
-
+        $(this).find('li').attr('id','active_sub_menu');
         $(this).find('li').prepend('<span class="active_circle"></span>');
 
 
