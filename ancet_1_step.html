@@ -115,9 +115,15 @@
                         </div>
                         <div class="ml-auto col-6">
                             <ul class="top_breadcumps">
-                                <li class="active">Заполнение анкеты</li>
-                                <li>Загрузка документов</li>
-                                <li>Отправить заявку в банк</li>
+                                <li id="active">
+                                    <span>Заполнение анкеты</span>
+                                </li>
+                                <li>
+                                    <span>Загрузка документов</span>
+                                </li>
+                                <li>
+                                    <span>Отправить заявку в банк</span>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-12 main-wrapper">
@@ -292,20 +298,6 @@
 <script src="js/bootstrap-datepicker.ru.min.js"></script>
 <script src="js/rating.min.js"></script>
 <script>
-    // target element
-    var el = document.querySelector('#el');
-
-    // current rating, or initial rating
-    var currentRating = 3;
-
-    // max rating, i.e. number of stars you want
-    var maxRating= 5;
-
-    // callback to run after setting the rating
-    var callback = function(rating) { alert(rating); };
-
-    // rating instance
-    var myRating = rating(el, currentRating, maxRating, callback);
 
     $(function () {
         var $menu = $("#menu");
@@ -340,8 +332,9 @@
 
     });
     $('#border_menu a').on('click', function () {
+        $('[id=active_sub_menu]').removeAttr('id');
         $('#border_menu li .active_circle').remove();
-        $(this).find('li').attr('id','active_sub_menu');
+        $(this).find('li').attr('id', 'active_sub_menu');
         $(this).find('li').prepend('<span class="active_circle"></span>');
 //выделение активного меню доработать
     });

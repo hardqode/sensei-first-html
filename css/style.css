@@ -212,13 +212,13 @@ a {
     text-align: left;
     color: #dddddd;
     padding-left: 5px;
-    display: table;
+    display: inline-flex;
     width: 100%;
 }
 .top_breadcumps:after{
     content: close-quote;
     position: absolute;
-    width: 94.2%;
+    width: 95%;
     height: 2px;
     background:#dddddd;
     left: 3.6%;
@@ -227,32 +227,24 @@ a {
 }
 
 .top_breadcumps li {
-    display: table-cell;
+    display: flex;
+    flex: 33% 0 0;
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
-.top_breadcumps li.active {
+.top_breadcumps li#active span{
     color: #8caaf3;
 }
-.top_breadcumps li.active:after {
+ li#active span:before {
     content: close-quote;
     background: #8caaf3;
-    width: 28%;
+    width: 29.5%;
     z-index: 3;
     height: 3px;
     position: absolute;
     bottom: 16.4px;
-    left: 2%;
 }
-.top_breadcumps li:first-child {
-    text-align: left;
-}
-
-.top_breadcumps:last-child {
-    text-align: right;
-}
-
 .wrapper_header {
     font-family: Circe;
     font-size: 24px;

@@ -16,7 +16,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/footable.bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/rating.min.css">
+    <!--<link rel="stylesheet" href="css/rating.min.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -107,7 +107,7 @@
     <div class="col-10 wrapper" id="main-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-9" id="zayavka_wrapper">
                     <div class="main-wrapper">
                         <div class="row">
                             <div class="col-10 ">
@@ -739,7 +739,7 @@
                         <button class="btn btn-outline-primary doc_delete_btn">отказ клиента от кредита</button>
                     </div>
                 </div>
-                <div class="col-3 right_section">
+                <div class="col-3 right_section" id="right_sec">
                     <button class="btn">Отправить заявку в другие банки</button>
                     <h6 class="mt">Сопряженные заявки</h6>
                     <div class="card">
@@ -803,22 +803,7 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
 <script src="js/footable.min.js"></script>
-<script src="js/rating.min.js"></script>
 <script>
-    // target element
-    var el = document.querySelector('#el');
-
-    // current rating, or initial rating
-    var currentRating = 3;
-
-    // max rating, i.e. number of stars you want
-    var maxRating= 5;
-
-    // callback to run after setting the rating
-    var callback = function(rating) { alert(rating); };
-
-    // rating instance
-    var myRating = rating(el, currentRating, maxRating, callback);
 
     $(function () {
         var $menu = $("#menu");
@@ -852,14 +837,15 @@
         });
 
     });
-    
+
     $('#border_menu a').on('click', function () {
+        $('[id=active_sub_menu]').removeAttr('id');
         $('#border_menu li .active_circle').remove();
-        $(this).find('li').attr('id','active_sub_menu');
-        $(this).find('li').prepend('<span class="active_circle"></span>');
-
-
+            $(this).find('li').attr('id', 'active_sub_menu');
+            $(this).find('li').prepend('<span class="active_circle"></span>');
+//выделение активного меню доработать
     });
+
     $('#sub_menu_button').on('click',function () {
         $('.sub_menu').toggle();
         if ($('.sub_menu').attr('display') === 'none'){
@@ -875,8 +861,18 @@
     });
 
     $('#status_btn').on('click',function () {
-        $('#list_of_progress').toggle();
+        $('#right_sec').toggle();
     });
+    $('#status_btn').on('click',function () {
+        if($('#zayavka_wrapper').hasClass('col-9')) {
+            $('#zayavka_wrapper').removeClass('col-9');
+            $('#zayavka_wrapper').addClass('col-12');
+        } else{
+            $('#zayavka_wrapper').removeClass('col-12');
+            $('#zayavka_wrapper').addClass('col-9');
+        }
+    });
+
 
 
 
