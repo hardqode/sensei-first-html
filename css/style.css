@@ -253,7 +253,9 @@ a {
     text-align: left;
     color: #000000;
 }
-
+.text_upper{
+    text-transform: uppercase;
+}
 .ancets_inputs {
     padding: 0;
 }
@@ -278,6 +280,127 @@ a {
 
 .full-width-input input {
     width: 91%;
+    border-radius: 2px;
+    border: solid 1px #c6c6c6;
+    height:36px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    color: #4a4a4a;
+    padding-left:17px;
+}
+
+.full-width-input2 input {
+    width: 100%;
+    border-radius: 2px;
+    border: solid 1px #c6c6c6;
+    height:36px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    color: #4a4a4a;
+    padding-left:17px;
+    margin-bottom:21px;
+}
+.select_period label{
+    width:40%;
+    height:36px;
+    border-radius:18px !important;
+    border: solid 1px #c6c6c6;
+    background:white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    text-align: left;
+    color: #000000;
+    text-transform:uppercase;
+    text-align:center;
+    padding-top:6px;
+
+}
+.select_period label.active{
+    background-color: #8caaf3;
+    color:white;
+}
+
+.select_period label:nth-child(1){
+    border-radius:18px !important;
+}
+.documents_upload div p{
+    font-size: 16px;
+    line-height: 1.0;
+    color: #4a4a4a;
+
+}
+.text-centered{
+    text-align:center;
+}
+.button-white{
+    outline:none;
+    padding-bottom:0;
+    text-transform:uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    color: #000000;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: solid 1.5px #d1d1d1;
+}
+.button-white:hover,.button-white:active{
+    border-color:black;
+    background:#c3c3c3;
+}
+.request_report_result{
+    text-align:right;
+}
+.request_report_result span{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.0;
+    text-align: left;
+    color: #000000;
+    margin-right: 23px;
+
+}
+.request_report_result button{
+    padding:5px 15px;
+    text-transform: uppercase;
+    border-radius: 17px;
+    background-color: #6f859b;
+    border: 0;
+    box-shadow: 2.1px 2.1px 15px 0 rgba(82, 100, 118, 0.2);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    text-align: left;
+    color: #ffffff;
+    outline:none;
+}
+.sub_information{
+    text-align: right;
+}
+.sub_information span{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.23;
+    text-align: right;
+    color: #4a4a4a;
+
+}
+.downloaded{
+    text-align:center;
+    text-transform:uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    color: #4a4a4a;
+}
+.name_of_doc{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #979696;
 }
 .reset-input input{
     width:auto;

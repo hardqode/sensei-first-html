@@ -79,7 +79,7 @@
                 </li>
             </a>
             <a href="#">
-                <li class="list-group-item" >
+                <li class="list-group-item">
                     <img src="img/building.png" alt="">
                     <span class="sub_menu_name">Объекты</span>
 
@@ -151,7 +151,7 @@
                                                         <div class="form-check form-check-inline reset-input secondary_input">
                                                             <label class="form-check-label">
                                                                 <input class="form-check-input" type="radio"
-                                                                        value="option1">
+                                                                       value="option1">
                                                             </label>
                                                             <span>М</span>
                                                         </div>
@@ -160,7 +160,7 @@
                                                         <div class="form-check form-check-inline reset-input secondary_input">
                                                             <label class="form-check-label">
                                                                 <input class="form-check-input" type="radio"
-                                                                        value="option2">
+                                                                       value="option2">
                                                             </label>
                                                             <span>Ж</span>
                                                         </div>
@@ -194,7 +194,7 @@
                                                         style="vertical-align: middle;font-size: 18px">
                                                         Семейное положение</h6>
                                                 </div>
-                                                <div class="col-4 ancet_select" >
+                                                <div class="col-4 ancet_select">
                                                     <select class="custom-select">
                                                         <option value="1" selected>Женат\Замужем</option>
                                                         <option value="2">Two</option>
@@ -338,9 +338,9 @@
         $(this).find('li').prepend('<span class="active_circle"></span>');
 //выделение активного меню доработать
     });
-    $('#sub_menu_button').on('click',function () {
+    $('#sub_menu_button').on('click', function () {
         $('.sub_menu').toggle();
-        if ($('.sub_menu').attr('display') === 'none'){
+        if ($('.sub_menu').attr('display') === 'none') {
             $('#main-wrapper').removeClass('col-10');
             $('#main-wrapper').addClass('col-12');
 
@@ -352,7 +352,7 @@
         }
     });
 
-    $('#status_btn').on('click',function () {
+    $('#status_btn').on('click', function () {
         $('#list_of_progress').toggle();
     });
 
