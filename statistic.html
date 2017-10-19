@@ -114,110 +114,96 @@
             </li>
 
         </ul>
-        <!--<ul class="second_sub_menu">-->
-        <!--<li>Новая заявка</li>-->
-        <!--<li>Мои заявки</li>-->
-        <!--<li>Калькулятор</li>-->
-        <!--<li>Статистика</li>-->
-        <!--</ul>-->
+        <ul class="second_sub_menu">
+            <li>Новая заявка</li>
+            <li>Мои заявки</li>
+            <li>Калькулятор</li>
+            <li>Статистика</li>
+        </ul>
     </div>
     <div class="col-10 wrapper" id="main-wrapper">
         <div class="container" id="main-container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 main-wrapper mt">
                     <div class="row">
-                        <div class="col-4">
-                            <h5 class="header_text">Заявка на кредит</h5>
+                        <h6 class="col-4 bold wrapper_header">Статистика за период: &nbsp;c</h6>
+                        <div class="col-2 full-width-input" id="datastart-container">
+                            <input type="text" class="form-control"
+                                   data-date-end-date="0d" id="data-start">
                         </div>
-                        <div class="ml-auto col-6">
-                            <ul class="top_breadcumps">
-                                <li >
-                                    <span>Заполнение анкеты</span>
-                                </li>
-                                <li>
-                                    <span>Загрузка документов</span>
-                                </li>
-                                <li id="active">
-                                    <span>Отправить заявку в банк</span>
-                                </li>
-                            </ul>
+                        <h6 class="col-1 bold wrapper_header">по</h6>
+                        <div class="col-2 full-width-input" id="dataend-container">
+                            <input type="text" class="form-control"
+                                   data-date-end-date="0d" id="data-end">
                         </div>
-                        <div class="col-12 main-wrapper">
-                            <div class="row">
-                                <h6 class="col-12 bold wrapper_header">Отправить заявку на проверку кредитному
-                                    эксперту</h6>
-                                <div class="col-5 mt">
-                                    <div class="booster ">
-                                        <p>Процент* одобрения с проверкой</p>
-                                        <p>70%</p>
-                                        <p>Без проверки Sensey - 40%</p>
-                                        <p>* согласно онлайн-статистике сервиса</p>
-                                    </div>
-                                </div>
-                                <div class="col-7 mt">
-                                    <h6 class="opportunities_header mt">Преимущества по работе с кредитным
-                                        экспертом:</h6>
-                                    <ul class="opportunities_text">
-                                        <li>1. Меньшая вероятность возврата документов.</li>
-                                        <li>2. Качественное заполнение</li>
-                                        <li>3. Ну и прочее</li>
-                                    </ul>
-                                    <div class="price_and_order">
-                                        <span>Стоимость услуги:</span><span>1000 рублей</span>
-                                        <button>Заказать</button>
-                                    </div>
-                                </div>
-                                <h6 class="col-12 bold wrapper_header mt">Список банков, удовлетворяющих вашей
-                                    заявке</h6>
-                                <div class="col-12 mt">
-                                    <table class="table">
-                                        <thead class="table_header">
-                                        <tr>
-                                            <th >Банк</th>
-                                            <th>Срок</th>
-                                            <th>Ставка</th>
-                                            <th >Ежемесячный платеж</th>
-                                            <th >Сумма кредита</th>
-                                            <th >Стоимость объекта</th>
-                                            <th >Первоначальный взнос</th>
-                                            <th >Статус</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="table_row_banks">
-                                            <td>Сбербанк</td>
-                                            <td>10 лет</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>2 600 руб.</td>
-                                            <td>3 000 000</td>
-                                            <td>2 000 000</td>
-                                            <td><button>Отправить</button></td>
-                                        </tr>
-                                        <tr class="table_row_banks">
-                                            <td>Альфа-банк</td>
-                                            <td>10 лет</td>
-                                            <td>10.5</td>
-                                            <td></td>
-                                            <td>2 300 руб.</td>
-                                            <td>3 000 000</td>
-                                            <td>2 000 000</td>
-                                            <td class="accepted">Одобрено</td>
-                                        </tr>
-                                        <tr class="table_row_banks">
-                                            <td>ВТБ24</td>
-                                            <td>10 лет</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>3 000 руб.</td>
-                                            <td>3 000 000</td>
-                                            <td>2 000 000</td>
-                                            <td class="rejected">Отказ</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                        <div class="col-6 mt">
+                            <div class="statistic_booster ">
+                                <p>Процент* одобрения с проверкой</p>
+                                <p>10</p>
+                                <p>из 68 возможных</p>
                             </div>
+                        </div>
+                        <div class="col-6 mt">
+                            <div class="statistic_booster ">
+                                <p>Процент* одобрения с проверкой</p>
+                                <p>20 дней</p>
+                                <p>на основании 10 заявок</p>
+                            </div>
+                        </div>
+                        <h6 class="col-12 bold wrapper_header mt">Статистика по банкам</h6>
+
+                        <div class="col-12 mt">
+                            <table class="table">
+                                <thead class="table_header">
+                                <tr>
+                                    <th>№</th>
+                                    <th>Банк</th>
+                                    <th>Количество
+                                        заявок
+                                    </th>
+                                    <th>Количество
+                                        выдач
+                                    </th>
+                                    <th>% выдачи</th>
+                                    <th>Средняя
+                                        % ставка
+                                    </th>
+                                    <th>Сумма
+                                        одобрений
+                                    </th>
+                                    <th>Средняя сумма
+                                        одобрения
+                                    </th>
+                                    <th>Среднее время
+                                        закрытия заявки
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="table_row_banks">
+                                    <td>1</td>
+                                    <td>Сбербанк</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>50</td>
+                                    <td>9,5</td>
+                                    <td>600,000,000 руб.</td>
+                                    <td>12,000,000 руб.</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="table_row_banks">
+                                    <td>1</td>
+                                    <td>Сбербанк</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>50</td>
+                                    <td>9,5</td>
+                                    <td>600,000,000 руб.</td>
+                                    <td>12,000,000 руб.</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -284,11 +270,9 @@
             if ($('.sub_menu').attr('display') === 'none') {
                 $('#main-wrapper').removeClass('col-10');
                 $('#main-wrapper').addClass('col-12');
-
             } else {
                 $('#main-wrapper').removeClass('col-12');
                 $('#main-wrapper').addClass('col-10');
-
 
             }
         });
@@ -297,12 +281,17 @@
             $('#list_of_progress').toggle();
         });
 
-        $('#datastart-container input').datepicker({
-            startDate: '01/01/1913',
+        $('#data-start').datepicker({
             orientation: "bottom left",
-            language: "ru"
+            language: "ru",
+            endDate:"infinity",
         });
 
+        $('#data-end').datepicker({
+            orientation: "bottom right",
+            language: "ru",
+            endDate:'infinity',
+        });
 
     </script>
 </body>

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.css">
     <link rel="stylesheet" href="css/rating.min.css">
+    <link rel="stylesheet" href="css/fontawesome-stars-o.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -59,6 +61,14 @@
             </div>
             <div class="ml-2 col-7 top_name">
                 <span>Иванов И. В.</span>
+                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6" autocomplete="off">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
             </div>
             <div class="col-2 chat_icon_block">
                 <img src="img/chat.png" alt="">
@@ -262,6 +272,8 @@
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="js/bootstrap-datepicker.ru.min.js"></script>
     <script src="js/rating.min.js"></script>
+    <script src="js/jquery.barrating.min.js"></script>
+    <script src="js/initRating.js"></script>
     <script>
 
         $(function () {
