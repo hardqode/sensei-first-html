@@ -15,6 +15,78 @@ button{
     outline:none !important;
 
 }
+.button{
+    padding:5px 15px;
+    text-transform: uppercase;
+    border-radius: 17px;
+    background-color: #6f859b;
+    border: 0;
+    box-shadow: 2.1px 2.1px 15px 0 rgba(82, 100, 118, 0.2);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2.0;
+    text-align: left;
+    color: #ffffff;
+    outline:none;
+}
+.button:hover,.button:active{
+    background-color: #02a87a;
+}
+.header-with-date *{
+    margin-right: 20px;
+}
+
+.header-with-date__input{
+    border-radius: 2px;
+    border: solid 1px #c6c6c6;
+    width: 80px;
+}
+.pagination_block{
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+}
+.pagination__link{
+    margin-top:4px;
+    margin-right: 6px;
+    font-size: 18px;
+    color: #777777;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+}
+.pagination__link:hover,.pagination__link:active{
+    color: #777;
+    text-decoration: none;
+}
+.pagination__link.active{
+    background-color: #8caaf3;
+    color: white;
+    border:0;
+
+}
+.pagination__dots{
+    color: #777777;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-right: 7px;
+}
+.pagination a:hover{
+    color: #8a8a8a;
+}
+.pagination span{
+    vertical-align: bottom;
+}
+.pagination__arrow{
+    margin-right:15px;
+    color: #777777;
+    font-size: 30px;
+}
 :active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
