@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav  main_header">
                 <li class="nav-item">
-                    <button class="btn btn-outline-secondary navigation_burger_button" id="sub_menu_button"><i
+                    <button class="navigation_burger_button" id="sub_menu_button"><i
                             class="material-icons">menu</i>
                     </button>
                 </li>
@@ -153,12 +153,12 @@
                         <h6 class="col-12 bold wrapper_header mt">Статистика по банкам</h6>
 
                         <div class="col-12 mt">
-                            <table class="table">
+                            <table class="table" data-sorting="true">
                                 <thead class="table_header">
                                 <tr>
-                                    <th>№</th>
+                                    <th data-type="number">№</th>
                                     <th>Банк</th>
-                                    <th>Количество
+                                    <th data-type="number">Количество
                                         заявок
                                     </th>
                                     <th>Количество
@@ -257,6 +257,16 @@
                 $active.get(0).removeClass('active');
             });
 
+        });
+        $('[name=status]').on('change', function () {
+            var filtering = FooTable.get('#showcase-example-1').use(FooTable.Filtering), // get the filtering component for the table
+                filter = $(this).val(); // get the value to filter by
+            if (filter === 'none') { // if the value is "none" remove the filter
+                filtering.removeFilter('status');
+            } else { // otherwise add/update the filter.
+                filtering.addFilter('status', filter, ['status']);
+            }
+            filtering.filter();
         });
         $('#border_menu a').on('click', function () {
             $('[id=active_sub_menu]').removeAttr('id');

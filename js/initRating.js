@@ -2,7 +2,8 @@
 $('#example-fontawesome-o').barrating({
     theme: 'fontawesome-stars-o',
     showSelectedRating: false,
-    currentRating: 4,
+    initialRating: '3.5',
+    readonly: true,
     onSelect: function (value, text) {
         if (!value) {
             $('#example-fontawesome-o')
