@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Include Required Prerequisites -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/footable.bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-stars-o.css">
+
+    <!--<link rel="stylesheet" href="css/rating.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        button{
+            outline: none !important;
+        }
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="row">
+    <nav class="col-10 navbar navbar-expand-md">
+        <div class="row">
+            <div class="col-12 nav_logo"><a href="#">SENSEI</a></div>
+            <div class="col-12 nav_logo_span"><span>решения для риэлторов</span></div>
+        </div>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav  main_header">
+                <li class="nav-item">
+                    <button class="navigation_burger_button"  id="sub_menu_button"><i
+                            class="material-icons">menu</i>
+                    </button>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </nav>
+    <div class="col-2 self_data_block">
+        <div class="row">
+            <div class="col-5">
+                <button class="button-white">Регистрация</button>
+            </div>
+            <div class="col-5 ml-auto">
+                <button class="only-text-btn">Войти</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1 sub_menu">
+        <ul class="list-group" id="border_menu">
+            <a href="#">
+                <li class="list-group-item" id="active_sub_menu">
+                    <span class="active_circle"></span>
+                    <img src="img/broker.png" alt=""><br>
+                    <span class="sub_menu_name">Дела</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item">
+                    <img src="img/building.png" alt="">
+                    <span class="sub_menu_name">Объекты</span>
+
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item ">
+                    <img src="img/broker.png" alt="">
+                    <span class="sub_menu_name">Клиенты</span>
+
+                </li>
+            </a>
+            <a href="#  ">
+                <li class="list-group-item ">
+                    <img src="img/house-price.png" alt="">
+                    <span class="sub_menu_name">Ипотека</span>
+
+                </li>
+            </a>
+            <li class="list-group-item ">
+
+            </li>
+
+        </ul>
+    </div>
+    <div class="col-10 wrapper" id="wrapper">
+        <div class="container">
+            <div class="row" >
+                <div class="col-9 mx-auto" id="main-wrapper">
+                    <div class="main-wrapper mt">
+                        <div class="row">
+                            <div class="col-11 mmt">
+                                <h6 class="wrapper_header">Список объектов</h6>
+                            </div>
+                            <div class="col-1 mmt">
+                                <button class="navigation_burger_button ml-auto" id="status_btn"><i
+                                        class="material-icons">menu</i></button>
+                            </div>
+                            <div class="col-4 mt">
+                                <input type="text" class="basic_input" placeholder="Город">
+                            </div>
+                            <div class="col-7 mt">
+                                <div class="row">
+                                    <div class="col-2"><h6 class="sub_header" style="margin-top: 4px">Цена:</h6></div>
+                                    <div class="col-4"><input type="text" class="basic_input" placeholder="от"></div>
+                                    <div class="col-4"><input type="text" class="basic_input" placeholder="до"></div>
+                                    <div class="col-2">
+                                        <select name="s" id="" class="basic_select">
+                                            <option value="1">м2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 right_section" id="right_sec">
+
+                    <h6 class="mt">Список дел</h6>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-5 card_id">
+                                <span>ID: 629237</span>
+                            </div>
+                            <div class="col-7 card_status_date">
+                                <span>Обновлено 2 дня назад</span>
+                            </div>
+                            <div class="col-12 mt card_opis">
+                                <p>Продажа 3-к. квартиры,<br>
+                                    90 м2, 6/10 этажей. <br>
+                                    Проспект Юмашева 55</p>
+                            </div>
+                            <div class="col-4 card_status mt">
+                                <span>Этап:</span>
+                            </div>
+                            <div class="col-8 card_status mt processing">
+                                <span>обзвон клиентов - 40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+<script src="js/footable.min.js"></script>
+<script src="js/jquery.barrating.min.js"></script>
+<script src="js/initRating.js"></script>
+<script>
+
+    $(function () {
+        var $menu = $("#menu");
+        $line = $("#line"),
+            $indicator = true,
+            $menuli = $("#menu li"),
+            $active = $menu.find(".active"),
+            default_pos = $active.offset().left - $menu.offset().left + 20,
+            default_width = $active.outerWidth() - 30;
+
+        $line.css({left: default_pos, width: default_width});
+
+        $menuli.hover(function () {
+            if (this === $active.get(0)) return;
+            var self = $(this);
+            var diff = self.offset().left - $menu.offset().left;
+            $line.stop().animate({
+                width: self.outerWidth() - 43,
+                left: diff + 20
+            }, 400);
+        }, function () {
+            if (this === $active.get(0)) return;
+            $line.stop().animate({
+                width: default_width,
+                left: default_pos
+            }, 400);
+        });
+        $menuli.on('click', function () {
+            this.addClass('active');
+            $active.get(0).removeClass('active');
+        });
+
+    });
+
+    $('#border_menu a').on('click', function () {
+        $('[id=active_sub_menu]').removeAttr('id');
+        $('#border_menu li .active_circle').remove();
+        $(this).find('li').attr('id', 'active_sub_menu');
+        $(this).find('li').prepend('<span class="active_circle"></span>');
+//выделение активного меню доработать
+    });
+
+    $('#sub_menu_button').on('click',function () {
+        $('.sub_menu').toggle();
+        if ($('.sub_menu').attr('display') === 'none'){
+            $('#wrapper').addClass('col-12');
+            $('#main-wrapper').removeClass('col-9');
+            $('#main-wrapper').addClass('col-12');
+
+        } else {
+            $('#wrapper').removeClass('col-12');
+            $('#main-wrapper').removeClass('col-12');
+            $('#main-wrapper').addClass('col-9');
+
+
+        }
+    });
+
+    $('#status_btn').on('click',function () {
+        $('#right_sec').toggle();
+    });
+    $('#status_btn').on('click',function () {
+        if($('#main-wrapper').hasClass('col-9')) {
+            $('#main-wrapper').removeClass('col-9');
+            $('#main-wrapper').addClass('col-12');
+        } else{
+            $('#main-wrapper').removeClass('col-12');
+            $('#main-wrapper').addClass('col-9');
+        }
+    });
+
+
+
+
+</script>
+</body>
+</html>
