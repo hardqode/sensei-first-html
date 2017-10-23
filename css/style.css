@@ -31,7 +31,20 @@ button {
     color: #ffffff;
     outline: none;
 }
-
+.w60{
+    width:60% !important;
+}
+.t-gray{
+    color: #4a4a4a !important;
+}
+.t-blue{
+    color:#8caaf3 !important;
+}
+.after_label{
+    color:#979696;
+    font-size:0.8vw;
+    margin-left:10px;
+}
 .button:hover, .button:active {
     background-color: #02a87a;
 }
@@ -951,7 +964,7 @@ button {
 }
 
 .mt {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .mmt {
