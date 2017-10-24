@@ -1648,7 +1648,9 @@ button {
     text-transform: uppercase;
     font-size: 14px;
 }
-
+.btn-dark{
+    margin-left:-20px;
+}
 .sub_header {
     font-size: 16px;
     line-height: 1.5;
@@ -1656,7 +1658,33 @@ button {
     color: #000000;
     vertical-align: middle;
 }
-
+.description_object_photo__span{
+    font-size: 13px;
+    line-height: 1.12;
+    text-align: left;
+    color: #4a4a4a;
+}
+.description_object__main{
+    text-align: center;
+}
+.description_object__main_text{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Circe;
+    font-size: 1.2vw;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #000000;
+}
+.description_object__second_text{
+    font-family: Circe;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.14;
+    color: #979696;
+    white-space: nowrap;
+}
 .chechbox {
     font-size: 12px;
     line-height: 1.71;
