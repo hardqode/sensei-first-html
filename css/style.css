@@ -761,6 +761,10 @@ button {
     color: #ffffff;
     outline: none;
 }
+.request_report_result button:hover,.request_report_result button:active {
+    background: #02a87a;
+    color: #fff;
+}
 
 .fwinput input {
     width: 100%;
@@ -1253,6 +1257,9 @@ button {
 }
 .progress-bar{
     background: #8caaf3;
+}
+.object_media_block div{
+    margin-bottom: 25px;
 }
 .price_and_order {
     text-align: right;
