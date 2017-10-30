@@ -142,30 +142,35 @@
                         </div>
                         <div class="col-12 main-wrapper mt">
                             <div class="row">
-                                <div class="col-4 mt money_block">
+                                <div class="col-12 mt money_block">
                                     <div class="row wallet_block">
-                                        <div class="col-6"><span class="spisok_doc" style="padding-left: 0">Баланс:</span></div>
-                                        <div class="col-6"><span class="price">3 000 000 руб.</span></div>
-                                        <div class="col-6 mt"><span class="spisok_doc" style="padding-left: 0">Полопнить на</span></div>
+                                        <div class="col-2"><span class="spisok_doc" style="padding-left: 0">Баланс:</span></div>
+                                        <div class="col-2"><span class="price">3 000 000 руб.</span></div>
+                                        <div class="w-100"></div>
+                                        <div class="col-2 mt"><span class="spisok_doc" style="padding-left: 0">Пополнить на</span></div>
+                                        <div class="col-2 mt"><input type="text" class="basic_input"></div>
                                         <div class="w-100" style="margin-bottom: 10px"></div>
-                                        <div class="col-6"><input type="text" class="basic_input"></div>
-                                        <div class="col-6">
-                                            <button class="my-btn " style="width: 80%;text-align: center;">
-                                                OK
-                                            </button>
-                                        </div>
                                         <div class="col-6 mt"><span class="spisok_doc" style="padding-left: 0">Метод оплаты</span></div>
-                                        <div class="col-12">
+                                        <div class="w-100"></div>
+                                        <div class="col-6">
                                             <input type="radio"  class="wallet_radio" id="visa_pay"  name="pay" hidden checked>
                                             <label for="visa_pay"><img src="img/visa_logo.png" width="74" height="43" alt=""></label>
                                             <input type="radio" class="wallet_radio" id="mc_pay" name="pay" hidden>
                                             <label for="mc_pay"><img src="img/master-card_logo.png" width="78" height="47" alt=""></label>
-                                            
+                                            <input type="radio"  class="wallet_radio" id="visa_pay1"  name="pay" hidden>
+                                            <label for="visa_pay1"><img src="img/visa_logo.png" width="74" height="43" alt=""></label>
+                                            <input type="radio" class="wallet_radio" id="mc_pay1" name="pay" hidden>
+                                            <label for="mc_pay1"><img src="img/master-card_logo.png" width="78" height="47" alt=""></label>
+
+                                        </div>
+                                        <div class="col-3 mt">
+                                            <button class="my-btn " style="width: 80%;text-align: center;">
+                                                OK
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-1"></div>
-                                <div class="col-5">
+                                <div class="col-12 mt">
                                     <div class="row">
                                         <h6 class="col-12 wrapper_header">
                                             История изменения баланса
@@ -176,8 +181,10 @@
                                                 <tr>
                                                     <th >ID</th>
                                                     <th>Дата </th>
-                                                    <th>Сумма
-                                                    </th>
+                                                    <th>Операция</th>
+                                                    <th>Способ оплаты</th>
+                                                    <th>Сумма</th>
+                                                    <th>Cтатус</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -185,11 +192,17 @@
                                                     <td>50078</td>
                                                     <td>25.06.2017</td>
                                                     <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
                                                 <tr class="table_row_banks">
                                                     <td>1</td>
                                                     <td>Сбербанк</td>
-                                                    <td>20</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
                                                 </tbody>
                                             </table>

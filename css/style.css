@@ -822,9 +822,9 @@ button {
 
 .wallet_radio[type=radio]:checked + label {
     background: white;
-    -webkit-box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
-    -moz-box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
-    box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
+    -webkit-box-shadow: 0px 0px 21px 1px rgba(59, 255, 121, 1);
+    -moz-box-shadow: 0px 0px 21px 1px rgba(59, 255, 121, 1);
+    box-shadow: 0px 0px 21px 1px rgba(59, 255, 121, 1);
     border-radius: 6%;
 }
 
