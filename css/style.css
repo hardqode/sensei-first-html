@@ -504,11 +504,12 @@ button {
 .top_breadcumps_lc li:nth-child(3)#active span:before {
     content: close-quote;
     background: #8caaf3;
-    width: 22.5%;
+    width: 80%;
     z-index: 3;
     height: 3px;
     position: absolute;
     bottom: 16.4px;
+    top: 20px;
 }
 
 .top_breadcumps_lc li:nth-child(4)#active span:before {
