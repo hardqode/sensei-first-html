@@ -43,22 +43,26 @@ button {
 .t-blue {
     color: #8caaf3 !important;
 }
-.inner-row{
+
+.inner-row {
     margin-left: 15px;
 }
+
 .after_label {
     color: #979696;
     font-size: 0.8vw;
     margin-left: 10px;
 }
-.object_description__header{
+
+.object_description__header {
     font-family: Circe;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.33;
     color: #000000;
 }
-.object_properties__list{
+
+.object_properties__list {
     font-family: Circe;
     font-size: 15px;
     line-height: 1.6;
@@ -67,7 +71,8 @@ button {
     white-space: nowrap;
 
 }
-.object_properties__values{
+
+.object_properties__values {
     white-space: nowrap;
     font-family: Circe;
     font-size: 15px;
@@ -75,22 +80,26 @@ button {
     text-align: left;
     color: #000000;
 }
-.object_description__text{
+
+.object_description__text {
     font-family: Circe;
     font-size: 15px;
     line-height: 1.6;
     text-align: left;
     color: #4a4a4a;
 }
-.offer__percentage{
+
+.offer__percentage {
     text-align: center;
 }
-.offer__percentage_status{
+
+.offer__percentage_status {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.07;
     color: #979696;
 }
+
 .button:hover, .button:active {
     background-color: #02a87a;
 }
@@ -402,13 +411,16 @@ button {
     line-height: 1.1;
     color: #4a4a4a;
 }
-.upload_photo_block{
+
+.upload_photo_block {
     text-align: center;
 }
-.upload_photo_block label{
+
+.upload_photo_block label {
 
 }
-.upload_photo_block label img{
+
+.upload_photo_block label img {
     padding-top: 27px;
     padding-left: 20px;
     padding-right: 20px;
@@ -416,9 +428,10 @@ button {
     background-color: #f1f2f3;
     border: dashed 2px #d1d2d3;
 }
-.upload_photo_block label button{
+
+.upload_photo_block label button {
     line-height: 2.0;
-    width:100%;
+    width: 100%;
     font-size: 16px;
 }
 
@@ -473,7 +486,7 @@ button {
     height: 3px;
     position: absolute;
     bottom: 16.4px;
-    top:20px;
+    top: 20px;
 }
 
 .top_breadcumps_lc li:nth-child(2)#active span:before {
@@ -735,6 +748,38 @@ button {
     color: white;
 }
 
+.label_from_to {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 1.143;
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+}
+.input_from_to {
+    padding-left: 30px !important;
+}
+.table_ancet_bank {
+    text-align: center;
+    vertical-align: middle;
+    font-size:15px;
+}
+.table_ancet_bank td{
+    border-top-color: white;
+    vertical-align: middle;
+}
+.table_ancet_bank th{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(74, 74, 74);
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.table_ancet_bank td:first-child{
+    width: 18%;
+}
 .basic_input {
     padding: 3px;
     padding-left: 4px;
@@ -758,22 +803,26 @@ button {
     background: white;
     padding-left: 4px;
 }
-.money_block{
+
+.money_block {
     background-color: #f6f8f9;
-    padding:30px;
+    padding: 30px;
     font-family: Circe;
 }
-.wallet_radio + label{
-    padding:10px;
+
+.wallet_radio + label {
+    padding: 10px;
     margin-right: 20px;
 }
-.wallet_radio[type=radio]:checked + label{
+
+.wallet_radio[type=radio]:checked + label {
     background: white;
-    -webkit-box-shadow: 10px 10px 42px 1px rgba(59,255,121,1);
-    -moz-box-shadow: 10px 10px 42px 1px rgba(59,255,121,1);
-    box-shadow: 10px 10px 42px 1px rgba(59,255,121,1);
+    -webkit-box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
+    -moz-box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
+    box-shadow: 10px 10px 42px 1px rgba(59, 255, 121, 1);
     border-radius: 6%;
 }
+
 .request_report_result {
     text-align: right;
 }
@@ -802,7 +851,8 @@ button {
     color: #ffffff;
     outline: none;
 }
-.request_report_result button:hover,.request_report_result button:active {
+
+.request_report_result button:hover, .request_report_result button:active {
     background: #02a87a;
     color: #fff;
 }
@@ -1293,15 +1343,19 @@ button {
     text-align: left;
     color: #4a4a4a;
 }
-.opportunities_company{
+
+.opportunities_company {
     margin-top: 40px;
 }
-.progress-bar{
+
+.progress-bar {
     background: #8caaf3;
 }
-.object_media_block div{
+
+.object_media_block div {
     margin-bottom: 25px;
 }
+
 .price_and_order {
     text-align: right;
 }
@@ -1517,7 +1571,8 @@ button {
     font-family: Circe;
     line-height: 1.2;
 }
-.object_header__link{
+
+.object_header__link {
     text-decoration: none;
     font-family: Circe;
     font-size: 14px;
@@ -1525,9 +1580,11 @@ button {
     text-align: left;
     color: #8caaf3;
 }
-.object_header__link:active,.object_header__link:hover{
+
+.object_header__link:active, .object_header__link:hover {
     color: #5dbda8;
 }
+
 .doc_item_menu p {
     text-align: right;
 }
