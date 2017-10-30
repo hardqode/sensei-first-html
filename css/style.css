@@ -757,19 +757,23 @@ button {
     top: 8px;
     left: 18px;
 }
+
 .input_from_to {
     padding-left: 30px !important;
 }
+
 .table_ancet_bank {
     text-align: center;
     vertical-align: middle;
-    font-size:15px;
+    font-size: 15px;
 }
-.table_ancet_bank td{
+
+.table_ancet_bank td {
     border-top-color: white;
     vertical-align: middle;
 }
-.table_ancet_bank th{
+
+.table_ancet_bank th {
     font-size: 15px;
     text-align: center;
     color: rgb(74, 74, 74);
@@ -777,9 +781,10 @@ button {
     border-bottom-color: white;
 }
 
-.table_ancet_bank td:first-child{
+.table_ancet_bank td:first-child {
     width: 18%;
 }
+
 .basic_input {
     padding: 3px;
     padding-left: 4px;
@@ -1012,6 +1017,10 @@ button {
     text-align: center;
     min-width: 13%;
     padding-bottom: 10x;
+}
+
+.sub_menu *:hover, *:focus {
+    text-decoration: none;
 }
 
 .sub_menu ul li {
@@ -2088,6 +2097,96 @@ button {
     width: 0;
     padding: 0;
     background: #8caaf3;
+}
+
+/*side_menu*/
+.closed_sub ul {
+    width: 90px;
+}
+
+.closed_sub .sub_menu_name {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    width: auto;
+    display: table;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #707070;
+    margin: 0 auto;
+}
+
+.closed_sub.sub_menu ul li img {
+    top: 12px !important;
+    position: relative !important;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    width: 27px;
+}
+
+.opened_sub .sub_spisok {
+    display: none;
+}
+
+.opened_sub .sub_spisok ul {
+    background: white;
+    height: 80px;
+}
+
+.opened_sub .sub_spisok ul li{
+    min-height: 20px;
+    font-size: 12px;
+    font-family: "Circe";
+    color: rgb(112, 112, 112);
+    line-height: 1.5;
+    text-align: center;
+
+}
+.opened_sub .sub_spisok ul li a,.opened_sub .sub_spisok ul li a:hover,.opened_sub .sub_spisok ul li a:focus{
+    font-size: 12px;
+    font-family: "Circe";
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+.opened_sub.sub_menu ul li img {
+    top: 25px;
+    position: absolute;
+    left: 11%;
+    z-index: 3;
+    right: auto;
+    width: 27px;
+}
+
+.opened_sub .active_circle {
+    top: 17px;
+    z-index: 2;
+    border-radius: 100%;
+    position: absolute;
+    left: 0.9%;
+    right: inherit !important;
+    margin-left: 6px !important;
+    width: 44px;
+    height: 44px;
+    background-color: #8caaf3;
+}
+
+.opened_sub .sub_menu_name {
+    position: absolute !important;
+    left: 38px;
+    top: 32px;
+    display: table;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #707070;
+    margin: 0 auto;
 }
 
 /*!*rating*!*/

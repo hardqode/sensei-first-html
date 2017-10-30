@@ -21,7 +21,7 @@
     <!--<link rel="stylesheet" href="css/rating.min.css">-->
     <link rel="stylesheet" href="css/style.css">
     <style>
-        button{
+        button {
             outline: none !important;
         }
     </style>
@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav  main_header">
                 <li class="nav-item">
-                    <button class="navigation_burger_button"  id="sub_menu_button"><i
+                    <button class="navigation_burger_button" id="sub_menu_button"><i
                             class="material-icons">menu</i>
                     </button>
                 </li>
@@ -65,7 +65,8 @@
             </div>
             <div class="ml-2 col-7 top_name">
                 <span>Иванов И. В.</span>
-                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6" autocomplete="off">
+                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6"
+                        autocomplete="off">
                     <option value=""></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -83,15 +84,32 @@
 </div>
 
 <div class="row">
-    <div class="col-1 sub_menu">
+    <div class="col-1 sub_menu opened_sub">
         <ul class="list-group" id="border_menu">
             <a href="#">
-                <li class="list-group-item" id="active_sub_menu">
-                    <span class="active_circle"></span>
+                <li class="list-group-item">
                     <img src="img/broker.png" alt=""><br>
                     <span class="sub_menu_name">Дела</span>
+
                 </li>
             </a>
+            <div class="sub_spisok">
+                <ul >
+                    <li><a href="#">Новая заявка</a></li>
+                    <li><a href="#">Мои заявки</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </div>
+            <!--<a href="#">-->
+            <!--<li>1</li>-->
+            <!--</a><a href="#">-->
+            <!--<li>2</li>-->
+            <!--</a><a href="#">-->
+            <!--<li>3</li>-->
+            <!--</a><a href="$">-->
+            <!--<li>4</li>-->
+            <!--</a>-->
             <a href="#">
                 <li class="list-group-item">
                     <img src="img/building.png" alt="">
@@ -99,6 +117,14 @@
 
                 </li>
             </a>
+            <div class="sub_spisok">
+                <ul >
+                    <li><a href="#">Новая заявка</a></li>
+                    <li><a href="#">Мои заявки</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </div>
             <a href="#">
                 <li class="list-group-item ">
                     <img src="img/broker.png" alt="">
@@ -106,16 +132,29 @@
 
                 </li>
             </a>
-            <a href="#  ">
+            <div class="sub_spisok">
+                <ul >
+                    <li><a href="#">Новая заявка</a></li>
+                    <li><a href="#">Мои заявки</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </div>
+            <a href="# ">
                 <li class="list-group-item ">
                     <img src="img/house-price.png" alt="">
                     <span class="sub_menu_name">Ипотека</span>
 
                 </li>
             </a>
-            <li class="list-group-item ">
-
-            </li>
+            <div class="sub_spisok">
+                <ul>
+                    <li><a href="#">Новая заявка</a></li>
+                    <li><a href="#">Мои заявки</a></li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </div>
 
         </ul>
     </div>
@@ -859,37 +898,24 @@
     $('#border_menu a').on('click', function () {
         $('[id=active_sub_menu]').removeAttr('id');
         $('#border_menu li .active_circle').remove();
-            $(this).find('li').attr('id', 'active_sub_menu');
-            $(this).find('li').prepend('<span class="active_circle"></span>');
-//выделение активного меню доработать
-    });
-
-    $('#sub_menu_button').on('click',function () {
-        $('.sub_menu').toggle();
-        if ($('.sub_menu').attr('display') === 'none'){
-            $('#main-wrapper').removeClass('col-10');
-            $('#main-wrapper').addClass('col-12');
-
-        } else {
-            $('#main-wrapper').removeClass('col-12');
-            $('#main-wrapper').addClass('col-10');
-
-
+        $(this).find('li').attr('id', 'active_sub_menu');
+        $(this).find('li').prepend('<span class="active_circle"></span>');
+        $('.sub_spisok').hide();
+        if($('.sub_menu').hasClass('opened_sub')) {
+            $(this).next().show();
         }
-    });
 
-    $('#status_btn').on('click',function () {
-        $('#right_sec').toggle();
     });
-    $('#status_btn').on('click',function () {
-        if($('#zayavka_wrapper').hasClass('col-9')) {
-            $('#zayavka_wrapper').removeClass('col-9');
-            $('#zayavka_wrapper').addClass('col-12');
-        } else{
-            $('#zayavka_wrapper').removeClass('col-12');
-            $('#zayavka_wrapper').addClass('col-9');
+    $('#sub_menu_button').on('click', function () {
+        $('.sub_menu').toggleClass('opened_sub closed_sub');
+        if($('.sub_menu').hasClass('opened_sub')) {
+            $('#active_sub_menu').parent().next().show();
+        }else{
+            $('.sub_spisok').hide();
         }
+
     });
+    $('#border_menu a').first().click();
 
 
 
