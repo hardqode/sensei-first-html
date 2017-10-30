@@ -692,6 +692,27 @@ button {
     background-color: #8caaf3;
     color: white;
 }
+.ancet_checkbox label {
+    margin-right: 5px;
+    width: 40%;
+    height: 36px;
+    border-radius: 18px !important;
+    border: solid 1px #c6c6c6;
+    background: white;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: left;
+    color: rgb(74, 74, 74);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 6px;
+
+}
+.ancet_checkbox label.active {
+    background-color: #8caaf3;
+    color: white;
+}
 
 .select_period label:nth-child(1) {
     border-radius: 18px !important;
