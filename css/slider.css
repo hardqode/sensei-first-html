@@ -23,6 +23,6 @@
 #slider img {
     width: 100%;
 }
-.lSSlideWrapper{
-    margin-bottom: -20px !important;
+#lightSlider{
+    /*height: 493px!important;*/
 }

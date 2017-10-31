@@ -747,6 +747,10 @@ button {
     text-align: left !important;
 }
 
+.text-right {
+    text-align: right !important;
+}
+
 .button-white {
     outline: none;
     padding-bottom: 0;
@@ -1097,7 +1101,7 @@ button {
     border-top: 1px solid #f1f2f3;
     text-align: center;
     min-width: 13%;
-    padding-bottom: 10x;
+    padding-bottom: 10px;
 }
 
 .sub_menu *:hover, *:focus {
@@ -1439,7 +1443,7 @@ button {
 }
 
 .opportunities_company {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 .progress-bar {
@@ -1674,32 +1678,59 @@ button {
     text-align: left;
     color: #8caaf3;
 }
-.object-btn-block{
+
+.show_number_btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 2px;
+    border: 0;
+    background-color: rgb(140, 170, 243);
+    font-size: 18px;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.333;
+}
+.show_number_btn span{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+
+
+.object-btn-block {
     margin-top: 40px;
     /*margin-right: 3px;*/
 }
+
 .object-blue-btn {
     font-size: 0.8vw;
-    font-family: "Circe";
+    font-family: Circe;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2.182;
-    border:0;
-    width:129%;
+    border: 0;
+    width: 129%;
     border-radius: 25px;
     background-color: rgb(140, 170, 243);
     padding-bottom: 3px;
     padding-top: 2px;
 
 }
-.object-blue-btn:hover{
+
+.object-blue-btn:hover {
     background: rgb(68, 85, 122);
 }
 
-.object-blue-btn:active{
+.object-blue-btn:active {
     background: rgb(151, 181, 255);
 }
+
 .object-white-btn {
     padding-bottom: 1px;
     padding-top: 0;
@@ -1709,19 +1740,21 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2.182;
-    border:2px solid;
-    width:125%;
+    border: 2px solid;
+    width: 125%;
     border-radius: 25px;
     background: white;
     border-color: rgb(169, 169, 169);
 
 }
-.object-white-btn:hover{
-    border-color:rgb(2, 116, 82);
+
+.object-white-btn:hover {
+    border-color: rgb(2, 116, 82);
     background-color: rgb(2, 116, 82);
     color: #fff;
 }
-.object-white-btn:active{
+
+.object-white-btn:active {
     border-color: #02a87a;
     color: #fff;
     background-color: #02a87a;
@@ -1984,9 +2017,11 @@ button {
     color: #000000;
     vertical-align: middle;
 }
-.description_object{
-    margin-left:-25px;
+
+.description_object {
+    margin-left: -25px;
 }
+
 .description_object_photo__span {
     font-size: 13px;
     line-height: 1.12;
