@@ -228,6 +228,12 @@ button {
     text-align: center;
     color: #010000;
 }
+.text-green{
+    font-size: 15px;
+    font-family: Circe;
+    color: rgb(93, 189, 168);
+    line-height: 1.6;
+}
 
 .period_of_application {
     text-align: right;
@@ -685,6 +691,7 @@ button {
     text-transform: uppercase;
     text-align: center;
     padding-top: 6px;
+    margin-right: 3px;
 
 }
 
@@ -802,7 +809,6 @@ button {
     border-top-color: white;
     border-bottom-color: white;
 }
-
 .table_ancet_bank td:first-child {
     width: 18%;
 }
@@ -812,7 +818,14 @@ button {
     padding-left: 4px;
     border-radius: 2px;
     border: solid 1px #c6c6c6;
-    width: 100%;
+    width: 100% !important;
+}
+.map_frame{
+    max-width:97%;
+    height:240px;
+    background: linear-gradient(45deg, red, blue);
+    margin-left: 15px;
+
 }
 
 .basic_select {
@@ -963,6 +976,13 @@ button {
 
 .radio-inputs div {
     vertical-align: middle;
+}
+.radio-row{
+    max-height: 150px;
+    min-height: 150px;
+}
+.radio-row div{
+    margin-bottom: 0;
 }
 
 .ancet_select select {
@@ -1142,7 +1162,9 @@ button {
 .mt {
     margin-top: 20px !important;
 }
-
+.ml-m{
+    margin-left: -15px !important;
+}
 .mmt {
     margin-top: -10px;
 }

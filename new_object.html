@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Include Required Prerequisites -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/footable.bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.css">
+    <link rel="stylesheet" href="css/rating.min.css">
+    <link rel="stylesheet" href="css/fontawesome-stars-o.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->
+<div class="row">
+    <nav class="col-10 navbar navbar-expand-md">
+        <div class="row">
+            <div class="col-12 nav_logo"><a href="#">SENSEI</a></div>
+            <div class="col-12 nav_logo_span"><span>решения для риэлторов</span></div>
+        </div>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav  main_header">
+                <li class="nav-item">
+                    <button class="navigation_burger_button" id="sub_menu_button"><i
+                            class="material-icons">menu</i>
+                    </button>
+                </li>
+                <li class="nav-item top_menu_label">
+                    <img src="img/gora.png" width="29" height="29"/><label>Агентство &#171;Гора&#187; </label>
+                </li>
+                <li class="nav-item ">
+                    <img src="img/bell.png" alt="" width="20" height="24">
+                </li>
+            </ul>
+
+
+        </div>
+
+    </nav>
+    <div class="col-2 self_data_block">
+        <div class="row">
+            <div class="col-2 top_avatar">
+                <img alt="">
+            </div>
+            <div class="ml-2 col-7 top_name">
+                <span>Иванов И. В.</span>
+                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6"
+                        autocomplete="off">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="col-2 chat_icon_block">
+                <img src="img/chat.png" alt="">
+                <span class="notification">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-1 sub_menu">
+        <ul class="list-group" id="border_menu">
+            <a href="#">
+                <li class="list-group-item" id="active_sub_menu">
+                    <span class="active_circle"></span>
+                    <img src="img/broker.png" alt=""><br>
+                    <span class="sub_menu_name">Дела</span>
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item">
+                    <img src="img/building.png" alt="">
+                    <span class="sub_menu_name">Объекты</span>
+
+                </li>
+            </a>
+            <a href="#">
+                <li class="list-group-item ">
+                    <img src="img/broker.png" alt="">
+                    <span class="sub_menu_name">Клиенты</span>
+
+                </li>
+            </a>
+            <a href="#  ">
+                <li class="list-group-item ">
+                    <img src="img/house-price.png" alt="">
+                    <span class="sub_menu_name">Ипотека</span>
+
+                </li>
+            </a>
+
+        </ul>
+    </div>
+    <div class="col-10 wrapper" id="main-wrapper">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4">
+                            <h5 class="header_text">Новый объект</h5>
+                        </div>
+                        <div class="col-12 mt main-wrapper">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row ancets_inputs">
+                                        <div class="main-inner-wrapper">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Тип недвижимости</h6>
+                                                </div>
+                                                <div class="col-5 ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Первичный рынок</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Тип объекта</h6>
+                                                </div>
+                                                <div class="col-6 radio-row ">
+
+                                                    <div class="row" style="height: 20px">
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option1">
+                                                                </label>
+                                                                <span>Квартира</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option2">
+                                                                </label>
+                                                                <span>Дом/дача</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option3">
+                                                                </label>
+                                                                <span>Квартира в новостройке</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option4">
+                                                                </label>
+                                                                <span>Коттедж</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option5">
+                                                                </label>
+                                                                <span>Комната</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option6">
+                                                                </label>
+                                                                <span>Часть дома</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="radio"
+                                                                           value="option2">
+                                                                </label>
+                                                                <span>Участок</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Тип сделки</h6>
+                                                </div>
+                                                <div class="btn-group col-6 select_period " data-toggle="buttons"
+                                                     style="margin-left: 3px">
+                                                    <label class="btn ">
+                                                        <input type="radio" name="options" id="option1"
+                                                               autocomplete="off" checked>
+                                                        Сдам
+                                                    </label>
+                                                    <label class="btn ">
+                                                        <input type="radio" name="options" id="option2"
+                                                               autocomplete="off">
+                                                        Продам
+                                                    </label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Срок аренды</h6>
+                                                </div>
+                                                <div class="btn-group col-6 select_period " data-toggle="buttons"
+                                                     style="margin-left: 3px">
+                                                    <label class="btn ">
+                                                        <input type="radio" name="options" id="option1"
+                                                               autocomplete="off" checked>
+                                                        Посуточно
+                                                    </label>
+                                                    <label class="btn ">
+                                                        <input type="radio" name="options" id="option2"
+                                                               autocomplete="off">
+                                                        Длительный срок
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Адрес</h6>
+                                                </div>
+                                                <div class="col-12 mt">
+                                                    <input type="text" class="basic_input">
+                                                </div>
+                                                <div class="col-12 map_frame">
+                                                </div>
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Об объекте</h6>
+                                                </div>
+                                                <div class="col-6 ml-3">
+                                                    <p class="opportunities_text">Кадастровый номер и номер квартиры
+                                                        гарантируют достоверность информации об объекте недвижимости и
+                                                        подтверждают его реальность. Объявления с кадастровым номером в
+                                                        результатах поиска выше. Номера можно добавить позже.</p>
+                                                    <p class="text-green">Никто не увидит эти данные</p>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Кадастровый номер</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Номер квартиры</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="col-7 divider_with_border"></div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Количество комнат</h6>
+                                                </div>
+                                                <div class="col-4 ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Этаж</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="col-1">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px;margin-left: -25px">
+                                                        из</h6>
+                                                </div>
+                                                <div class="col-2" style="margin-left: -65px;">
+                                                    <input type="text" placeholder="">
+                                                </div>
+
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Общая площадь</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" class="basic_input" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Площадь комнат</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" class="basic_input" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Жилая площадь</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" class="basic_input" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Кухня</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" class="basic_input" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Окна выходят</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row" style="height: 20px">
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="checkbox"
+                                                                           value="option1">
+                                                                </label>
+                                                                <span>Во двор</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="checkbox"
+                                                                           value="option2">
+                                                                </label>
+                                                                <span>На улицу</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Ремонт</h6>
+                                                </div>
+                                                <div class="col-4 ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Без ремонта</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">О здании</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Год постройки</h6>
+                                                </div>
+                                                <div class="col-2">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Тип дома</h6>
+                                                </div>
+                                                <div class="col-4 ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Кирпичный</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Парковка</h6>
+                                                </div>
+                                                <div class="col-4 ancet_select">
+                                                    <select class="custom-select">
+                                                        <option value="1" selected>Наземная</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Описание</h6>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                                  rows="5"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Цена и условия сделки</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Цена</h6>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="w-100"></div>
+                                                <div class="col-4">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px">
+                                                        Бонус агенту</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="opportunities_text">Вы можете указать бонус, который оплатите агенту в случае успешной сделки.
+                                                        Данное поле будет видно пользователям на профессиональных тарифных планах.
+                                                        Вы можете указать фиксированную сумму или процент от сделки.</p>
+                                                    <div class="row ml-m">
+
+                                                        <div class="btn-group col-12 select_period " data-toggle="buttons"
+                                                             style="margin-left: 3px">
+                                                            <label class="btn active">
+                                                                <input type="radio" name="options_price" id="option11"
+                                                                       autocomplete="off" checked>
+                                                                Нет
+                                                            </label>
+                                                            <label class="btn ">
+                                                                <input type="radio" name="options_price" id="option21"
+                                                                       autocomplete="off">
+                                                                Фиксированная сумма
+                                                            </label>
+                                                            <label class="btn ">
+                                                                <input type="radio" name="options_price" id="option3"
+                                                                       autocomplete="off">
+                                                                Процент от сделки
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Фото и видео</h6>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p class="opportunities_text">Не допускаются к размещению фотографии с водяными знаками,
+                                                        чужих объектов и рекламные баннеры. JPG, PNG или GIF.
+                                                        Максимальный размер файла 10 мб</p>
+                                                </div>
+                                                <div class="col-12 map_frame">
+                                                </div>
+                                                <div class="col-4 mt">
+                                                    <h6 class="sub_header"
+                                                        style="vertical-align: middle;font-size: 18px;">
+                                                        Видео</h6>
+                                                </div>
+                                                <div class="w-100" style="margin-bottom: 0"></div>
+                                                <div class="col-5 mmt" >
+                                                    <input type="text" placeholder="">
+                                                </div>
+                                                <div class="col-3 mmt ml-m" >
+                                                    <button class="my-btn">добавить</button>
+                                                </div>
+                                                <div class="col-12 mt">
+                                                    <h6 class="wrapper_header ml-m">Условия размещения</h6>
+                                                </div>
+                                                <div class="col-12 radio-row">
+                                                    <div class="row" style="height: 20px">
+                                                        <div class="col-4">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="checkbox"
+                                                                           value="option1">
+                                                                </label>
+                                                                <span style="
+    width: 1139.5%;">Я согласен с условиями размещения</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-100"></div>
+                                                        <div class="col-4">
+                                                            <div class="form-check form-check-inline reset-input secondary_input">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" name="type_object"
+                                                                           type="checkbox"
+                                                                           value="option2">
+                                                                </label>
+                                                                <span style="
+    width: 1139.5%;">Эксклюзивный договор продажи</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <button class="btn btn-outline-dark doc_delete_btn" style="margin-top: 15px;margin-left: -10px">Загрузить</button>
+                                                        </div>
+                                                        <div class="col-2 mt">
+                                                            <p class="card_opis">только в формате .pdf</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 ml-m">
+                                                    <button class="my-btn">сохранить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+<script src="js/footable.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/rating.min.js"></script>
+<script src="js/jquery.barrating.min.js"></script>
+<script src="js/initRating.js"></script>
+<script>
+
+    $(function () {
+        var $menu = $("#menu");
+        $line = $("#line"),
+            $indicator = true,
+            $menuli = $("#menu li"),
+            $active = $menu.find(".active"),
+            default_pos = $active.offset().left - $menu.offset().left + 20,
+            default_width = $active.outerWidth() - 30;
+
+        $line.css({left: default_pos, width: default_width});
+
+        $menuli.hover(function () {
+            if (this === $active.get(0)) return;
+            var self = $(this);
+            var diff = self.offset().left - $menu.offset().left;
+            $line.stop().animate({
+                width: self.outerWidth() - 43,
+                left: diff + 20
+            }, 400);
+        }, function () {
+            if (this === $active.get(0)) return;
+            $line.stop().animate({
+                width: default_width,
+                left: default_pos
+            }, 400);
+        });
+        $menuli.on('click', function () {
+            this.addClass('active');
+            $active.get(0).removeClass('active');
+        });
+
+    });
+    $('#border_menu a').on('click', function () {
+        $('[id=active_sub_menu]').removeAttr('id');
+        $('#border_menu li .active_circle').remove();
+        $(this).find('li').attr('id', 'active_sub_menu');
+        $(this).find('li').prepend('<span class="active_circle"></span>');
+//выделение активного меню доработать
+    });
+    $('#sub_menu_button').on('click', function () {
+        $('.sub_menu').toggle();
+        if ($('.sub_menu').attr('display') === 'none') {
+            $('#main-wrapper').removeClass('col-10');
+            $('#main-wrapper').addClass('col-12');
+
+        } else {
+            $('#main-wrapper').removeClass('col-12');
+            $('#main-wrapper').addClass('col-10');
+
+
+        }
+    });
+
+    $('#status_btn').on('click', function () {
+        $('#list_of_progress').toggle();
+    });
+
+    $('#datastart-container input').datepicker({
+        startDate: '01/01/1913',
+        orientation: "bottom left",
+        language: "ru"
+    });
+
+
+</script>
+</body>
+</html>
