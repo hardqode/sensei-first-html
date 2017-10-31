@@ -426,6 +426,16 @@ button {
 .opened_sub #active_sub_menu  .sub_menu_name{
     bottom:20px;
 }
+.opened_sub #active_sub_menu:after{
+    content: close-quote;
+    position: absolute;
+    display: inherit;
+    top: 30px;
+    right: -4px;
+    height: 57%;
+    width: 3px;
+    background: #8caaf3;
+}
 .opened_sub .sub_menu_list {
     font-size: 12px;
     font-family: "Circe";
@@ -434,7 +444,7 @@ button {
     text-align: center;
     position: relative;
     left: -10px;
-    top: 30px;
+    top: 13px;
 }
 .closed_sub .sub_menu_list{
     display: none;
