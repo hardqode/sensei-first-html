@@ -335,11 +335,11 @@ button {
 }
 
 .wrapper {
-    margin-left: 20px;
-    padding: 0;
-    margin-top: 26px;
+    padding: 40px;
 }
-
+.flexible-row{
+    flex: 1 1 89%;
+}
 .main-wrapper {
     padding: 30px;
     padding-left: 30px;
@@ -1106,8 +1106,9 @@ button {
 .sub_menu {
     border-top: 1px solid #f1f2f3;
     text-align: center;
-    min-width: 13%;
+    max-width: 140px;
     padding-bottom: 10px;
+    flex:0 1 auto;
 }
 
 .sub_menu *:hover, *:focus {
@@ -2280,6 +2281,9 @@ button {
 }
 
 /*side_menu*/
+.closed_sub{
+    flex: 0 1 3%;
+}
 .closed_sub ul {
     width: 90px;
 }
@@ -2309,6 +2313,10 @@ button {
     width: 27px;
 }
 
+.opened_sub{
+    width:140px;
+    flex: 3 1 3%;
+}
 .opened_sub .sub_spisok {
     display: none;
 }
