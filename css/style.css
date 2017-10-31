@@ -423,6 +423,9 @@ button {
     top: 10px;
     z-index: 3;
 }
+.opened_sub #active_sub_menu  .sub_menu_name{
+    bottom:20px;
+}
 .opened_sub .sub_menu_list {
     font-size: 12px;
     font-family: "Circe";
