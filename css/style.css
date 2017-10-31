@@ -337,9 +337,11 @@ button {
 .wrapper {
     padding: 40px;
 }
-.flexible-row{
+
+.flexible-row {
     flex: 1 1 89%;
 }
+
 .main-wrapper {
     padding: 30px;
     padding-left: 30px;
@@ -356,15 +358,86 @@ button {
     padding-bottom: 0;
     margin-bottom: 10px !important;
 }
-
 #active_sub_menu:after {
     content: close-quote;
     position: absolute;
+    display: inherit;
     top: 7px;
+    right:-4px;
     height: 80%;
     width: 3px;
     background: #8caaf3;
-    right: -3px;;
+}
+.closed_sub#active_sub_menu:after{
+    content: close-quote;
+    position: absolute;
+    display: inherit;
+    top: 7px;
+    right: -4px;
+    height: 80%;
+    width: 3px;
+    background: #8caaf3;
+}
+.sub_menu-icon{
+    position: relative;
+}
+.sub_menu-icon img{
+    position: relative;
+    top: 27px;
+    z-index: 3;
+}
+.sub_menu-item {
+    position: relative;
+    background-color: white;
+    padding: 16px;
+    min-height:90px;
+}
+.active_circle {
+    top: 17px;
+    padding: 9px;
+    z-index: 2;
+    border-radius: 100%;
+    position: absolute;
+    left: 0.9%;
+    right: inherit !important;
+    margin-left: 6px !important;
+    width: 44px;
+    height: 44px;
+    background-color: #8caaf3;
+}
+.closed_sub  .active_circle{
+    padding: 9px;
+    z-index: 2;
+    border-radius: 100%;
+    position: absolute;
+    left: 22%;
+    right: inherit !important;
+    margin-left: 0px !important;
+    height: 44px;
+    background-color: #8caaf3;
+    min-width: 44px;
+    top:0;
+}
+.closed_sub .sub_menu-icon img{
+    position: relative;
+    top: 10px;
+    z-index: 3;
+}
+.opened_sub .sub_menu_list {
+    font-size: 12px;
+    font-family: "Circe";
+    color: rgb(112, 112, 112);
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    top: 30px;
+}
+.closed_sub .sub_menu_list{
+    display: none;
+}
+.sub_menu_list ul li{
+    white-space: nowrap;
 }
 
 .btn-outline-secondary {
@@ -820,13 +893,16 @@ button {
     border-top-color: white;
     border-bottom-color: white;
 }
-.table_ancet_bank tr input[type=text]{
-    width:40%;
+
+.table_ancet_bank tr input[type=text] {
+    width: 40%;
     text-align: center;
 }
-.price_input{
-    width:90% !important;
+
+.price_input {
+    width: 90% !important;
 }
+
 .table_ancet_bank td:first-child {
     width: 18%;
 }
@@ -1105,35 +1181,16 @@ button {
 
 .sub_menu {
     border-top: 1px solid #f1f2f3;
-    text-align: center;
-    max-width: 140px;
+    max-width: 155px;
     padding-bottom: 10px;
-    flex:0 1 auto;
+    flex: 0 1 auto;
 }
 
 .sub_menu *:hover, *:focus {
     text-decoration: none;
+
 }
 
-.sub_menu ul li {
-    border: 0;
-}
-
-.sub_menu ul li {
-    border: 0;
-    min-height: 80px;
-}
-
-.sub_menu ul li img {
-    top: 23px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 3;
-    width: 27px;
-}
 
 .sub_menu_name {
     position: absolute;
@@ -1149,36 +1206,8 @@ button {
     margin: 0 auto;
 }
 
-.second_sub_menu {
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
-    color: #707070;
-    background: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-top: 1px solid #d1d2d3;
 
-}
 
-.second_sub_menu li {
-    min-height: 25px !important;
-    vertical-align: middle;
-}
-
-.active_circle {
-    top: 17px;
-    z-index: 2;
-    border-radius: 100%;
-    position: absolute;
-    left: 1%;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 44px;
-    height: 44px;
-    background-color: #8caaf3;
-}
 
 .divider_with_border {
     margin-left: 3%;
@@ -1698,7 +1727,8 @@ button {
     font-weight: bold;
     line-height: 1.333;
 }
-.show_number_btn span{
+
+.show_number_btn span {
     margin-top: 10px;
     font-size: 16px;
     font-family: "Circe";
@@ -1706,8 +1736,6 @@ button {
     text-transform: uppercase;
     line-height: 1.5;
 }
-
-
 
 .object-btn-block {
     margin-top: 40px;
@@ -2281,25 +2309,18 @@ button {
 }
 
 /*side_menu*/
-.closed_sub{
+.closed_sub {
     flex: 0 1 3%;
 }
+
 .closed_sub ul {
     width: 90px;
 }
 
 .closed_sub .sub_menu_name {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: -25px;
-    width: auto;
-    display: table;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
-    color: #707070;
-    margin: 0 auto;
+    position: absolute;
+    bottom: 8px;
+    left: -20px;
 }
 
 .closed_sub.sub_menu ul li img {
@@ -2313,10 +2334,11 @@ button {
     width: 27px;
 }
 
-.opened_sub{
-    width:140px;
+.opened_sub {
+    width: 155px;
     flex: 3 1 3%;
 }
+
 .opened_sub .sub_spisok {
     display: none;
 }
@@ -2367,15 +2389,14 @@ button {
 
 .opened_sub .sub_menu_name {
     position: absolute !important;
-    left: 38px;
-    top: 32px;
+    bottom: -4px;
     display: table;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     text-align: center;
     color: #707070;
-    margin: 0 auto;
+    left: -60%;
 }
 
 /*!*rating*!*/
