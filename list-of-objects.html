@@ -109,25 +109,125 @@
                     <div class="main-wrapper mt">
                         <div class="row">
                             <div class="col-11 mmt">
-                                <h6 class="wrapper_header">Список объектов</h6>
+                                <h6 class="wrapper_header ml-m">Список объектов</h6>
                             </div>
                             <div class="col-1 mmt">
                                 <button class="navigation_burger_button ml-auto" id="status_btn"><i
                                         class="material-icons">menu</i></button>
                             </div>
-                            <div class="col-4 mt">
-                                <input type="text" class="basic_input" placeholder="Город">
+                            <div class="col-2 mt">
+                                <a href="#" class="city_link">Казань</a>
                             </div>
-                            <div class="col-7 mt">
+                            <div class="col-7 mt" >
                                 <div class="row">
-                                    <div class="col-2"><h6 class="sub_header" style="margin-top: 4px">Цена:</h6></div>
-                                    <div class="col-4"><input type="text" class="basic_input" placeholder="от"></div>
-                                    <div class="col-4"><input type="text" class="basic_input" placeholder="до"></div>
-                                    <div class="col-2">
-                                        <select name="s" id="" class="basic_select">
-                                            <option value="1">м2</option>
+                                    <div class="col-6">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">Метро</option>
                                         </select>
                                     </div>
+                                    <div class="col-6">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">Район</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 mt" id="second_row_search">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">Продам</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">1 к</option>
+                                            <option value="2">2 к</option>
+                                            <option value="3">3 к</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">Покупка первички</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <select name="s" id="" class="boxed_select">
+                                            <option value="1">Квартира</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt" id="third_row_search">
+                                <div class="row">
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="Этаж от"></div>
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="до"></div>
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="Площадь от"></div>
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="до"></div>
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="Цена от"></div>
+                                    <div class="col-2"><input type="text" class="basic_input" placeholder="до"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input type="text" class="basic_input" placeholder="Этаж от">
+                                    </div>
+                                    <div class="col-2">
+                                        <button class="my-btn">Поиск</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-wrapper">
+                        <div class="collapse show" role="tabpanel">
+                                <div class="row mmt">
+                                    <div class="col-4 mt object">
+                                        <img alt=""  width="200" height="127">
+                                    </div>
+                                    <div class="col-4 mt object_adress ml-m">
+                                        <span class="sub_header">Ново-Савиновский район <br>ул. Пушкина д.1</span>
+                                        <br><br>
+                                        <span class="object_header__link">Существует еще 3 <br> предложения по этому объекту</span>
+                                    </div>
+                                    <div class="col-4 mt description_object">
+                                        <div class="row ">
+                                            <div class="col-6 description_object__main">
+                                                <span class="description_object__main_text">3,000,000 руб.</span>
+                                                <span class="description_object__second_text">Цена за м2 55 000 руб.</span>
+
+                                            </div>
+                                            <div class="col-6 description_object__main">
+                                                <span class="description_object__main_text">2-комнатная</span>
+                                                <span class="description_object__second_text">Дизайнерский ремонт</span>
+                                            </div>
+                                            <div class="col-6 description_object__main expanded_property_of_object d-none">
+                                                <span class="description_object__main_text">4 этаж из 11</span><br>
+                                                <span class="description_object__second_text">Дом кирпичный</span>
+                                            </div>
+                                            <div class="col-6 description_object__main expanded_property_of_object d-none">
+                                                <span class="description_object__main_text">68 м2</span><br>
+
+                                                <span class="description_object__second_text">Команты: 40м2</span>
+
+                                            </div>
+
+                                            <div class="col-6 object-btn-block">
+                                                <button class="object-blue-btn">показать телефон</button>
+                                            </div>
+                                            <div class="col-6 object-btn-block">
+                                                <button class="object-white-btn">перезвоните мне</button>
+                                            </div>
+                                            <div class="col-3 object-btn-block expanded_object_btn d-none">
+                                                <button class="object-white-btn">привязка к делу</button>
+                                            </div>
+                                            <div class="col-3 object-btn-block expanded_object_btn d-none">
+                                                <button class="object-white-btn">избранное</button>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +236,7 @@
                 </div>
                 <div class="col-3 right_section" id="right_sec">
 
-                    <h6 class="mt">Список дел</h6>
+                    <h6 class="mt text-left ml-3">Список дел</h6>
                     <div class="card">
                         <div class="row">
                             <div class="col-5 card_id">
@@ -245,9 +345,44 @@
         if($('#main-wrapper').hasClass('col-9')) {
             $('#main-wrapper').removeClass('col-9');
             $('#main-wrapper').addClass('col-12');
+            $('#third_row_search').addClass('col-10');
+            $('#third_row_search').removeClass('col-12');
+            $('#second_row_search').addClass('col-10');
+            $('#second_row_search').removeClass('col-12');
+            $('.object').addClass('col-3');
+            $('.object').removeClass('col-4');
+            $('.object_adress').addClass('col-3');
+            $('.object_adress').removeClass('col-4');
+            $('.description_object').addClass('col-6');
+            $('.description_object').removeClass('col-3');
+            $('.expanded_property_of_object').removeClass('d-none');
+            $('.expanded_object_btn').removeClass('d-none');
+            $('.description_object__main').addClass('col-3');
+            $('.description_object__main').removeClass('col-6');
+            $('.object-btn-block').addClass('col-3');
+            $('.object-btn-block').removeClass('col-6');
+
+
+
         } else{
             $('#main-wrapper').removeClass('col-12');
             $('#main-wrapper').addClass('col-9');
+            $('#third_row_search').removeClass('col-10');
+            $('#third_row_search').addClass('col-12');
+            $('#second_row_search').removeClass('col-10');
+            $('#second_row_search').addClass('col-12');
+            $('.object').removeClass('col-3');
+            $('.object').addClass('col-4');
+            $('.object_adress').removeClass('col-3');
+            $('.object_adress').addClass('col-4');
+            $('.description_object').removeClass('col-6');
+            $('.description_object').addClass('col-3');
+            $('.description_object .expanded_property_of_object').addClass('d-none');
+            $('.expanded_object_btn').addClass('d-none');
+            $('.description_object__main').removeClass('col-3');
+            $('.description_object__main').addClass('col-6');
+            $('.object-btn-block').removeClass('col-3');
+            $('.object-btn-block').addClass('col-6');
         }
     });
 

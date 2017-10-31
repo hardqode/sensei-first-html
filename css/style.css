@@ -228,7 +228,8 @@ button {
     text-align: center;
     color: #010000;
 }
-.text-green{
+
+.text-green {
     font-size: 15px;
     font-family: Circe;
     color: rgb(93, 189, 168);
@@ -699,6 +700,7 @@ button {
     background-color: #8caaf3;
     color: white;
 }
+
 .ancet_checkbox label {
     margin-right: 5px;
     width: 40%;
@@ -716,6 +718,7 @@ button {
     padding-top: 6px;
 
 }
+
 .ancet_checkbox label.active {
     background-color: #8caaf3;
     color: white;
@@ -738,6 +741,10 @@ button {
 
 .text-centered {
     text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
 }
 
 .button-white {
@@ -809,6 +816,7 @@ button {
     border-top-color: white;
     border-bottom-color: white;
 }
+
 .table_ancet_bank td:first-child {
     width: 18%;
 }
@@ -820,9 +828,10 @@ button {
     border: solid 1px #c6c6c6;
     width: 100% !important;
 }
-.map_frame{
-    max-width:97%;
-    height:240px;
+
+.map_frame {
+    max-width: 97%;
+    height: 240px;
     background: linear-gradient(45deg, red, blue);
     margin-left: 15px;
 
@@ -842,6 +851,33 @@ button {
     padding-bottom: 5px;
     background: white;
     padding-left: 4px;
+}
+
+.city_link {
+    font-size: 16px;
+    font-family: "Circe";
+    color: rgb(140, 170, 243);
+    line-height: 1;
+
+}
+
+.city_link:active, .city_link:hover {
+    text-decoration: none;
+    color: #02a87a;
+}
+
+.boxed_select {
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 2px;
+    height: 34px;
+    width: 100%;
+    background: white;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 1.143;
+    text-align: left;
+    vertical-align: top;
+
 }
 
 .money_block {
@@ -977,11 +1013,13 @@ button {
 .radio-inputs div {
     vertical-align: middle;
 }
-.radio-row{
+
+.radio-row {
     max-height: 150px;
     min-height: 150px;
 }
-.radio-row div{
+
+.radio-row div {
     margin-bottom: 0;
 }
 
@@ -1162,9 +1200,11 @@ button {
 .mt {
     margin-top: 20px !important;
 }
-.ml-m{
+
+.ml-m {
     margin-left: -15px !important;
 }
+
 .mmt {
     margin-top: -10px;
 }
@@ -1633,6 +1673,41 @@ button {
     text-align: left;
     color: #8caaf3;
 }
+.object-btn-block{
+    margin-top: 40px;
+    /*margin-right: 3px;*/
+}
+.object-blue-btn {
+    font-size: 0.8vw;
+    font-family: "Circe";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.182;
+    border:0;
+    width:129%;
+    border-radius: 25px;
+    background-color: rgb(140, 170, 243);
+    padding-bottom: 3px;
+    padding-top: 2px;
+
+}
+.object-white-btn {
+    padding-bottom: 1px;
+    padding-top: 0;
+    font-size: 0.8vw;
+    font-family: "Circe";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.182;
+    border:2px solid;
+    width:125%;
+    border-radius: 25px;
+    background: white;
+    border-color: rgb(169, 169, 169);
+
+}
 
 .object_header__link:active, .object_header__link:hover {
     color: #5dbda8;
@@ -1891,7 +1966,9 @@ button {
     color: #000000;
     vertical-align: middle;
 }
-
+.description_object{
+    margin-left:-25px;
+}
 .description_object_photo__span {
     font-size: 13px;
     line-height: 1.12;
@@ -2182,7 +2259,7 @@ button {
     height: 80px;
 }
 
-.opened_sub .sub_spisok ul li{
+.opened_sub .sub_spisok ul li {
     min-height: 20px;
     font-size: 12px;
     font-family: "Circe";
@@ -2191,7 +2268,8 @@ button {
     text-align: center;
 
 }
-.opened_sub .sub_spisok ul li a,.opened_sub .sub_spisok ul li a:hover,.opened_sub .sub_spisok ul li a:focus{
+
+.opened_sub .sub_spisok ul li a, .opened_sub .sub_spisok ul li a:hover, .opened_sub .sub_spisok ul li a:focus {
     font-size: 12px;
     font-family: "Circe";
     color: rgb(112, 112, 112);
