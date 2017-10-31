@@ -822,7 +822,8 @@ button {
 }
 
 .basic_input {
-    padding: 3px;
+    font-size: 14px;
+    padding: 5px;
     padding-left: 4px;
     border-radius: 2px;
     border: solid 1px #c6c6c6;
@@ -1692,6 +1693,13 @@ button {
     padding-top: 2px;
 
 }
+.object-blue-btn:hover{
+    background: rgb(68, 85, 122);
+}
+
+.object-blue-btn:active{
+    background: rgb(151, 181, 255);
+}
 .object-white-btn {
     padding-bottom: 1px;
     padding-top: 0;
@@ -1707,6 +1715,16 @@ button {
     background: white;
     border-color: rgb(169, 169, 169);
 
+}
+.object-white-btn:hover{
+    border-color:rgb(2, 116, 82);
+    background-color: rgb(2, 116, 82);
+    color: #fff;
+}
+.object-white-btn:active{
+    border-color: #02a87a;
+    color: #fff;
+    background-color: #02a87a;
 }
 
 .object_header__link:active, .object_header__link:hover {
