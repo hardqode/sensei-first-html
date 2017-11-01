@@ -60,7 +60,8 @@
             </div>
             <div class="ml-2 col-7 top_name">
                 <span>Иванов И. В.</span>
-                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6" autocomplete="off">
+                <select id="example-fontawesome-o" class="custom-select select" name="rating" data-current-rating="5.6"
+                        autocomplete="off">
                     <option value=""></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -136,11 +137,11 @@
                             </select>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col-3 mt search-input">
+                        <div class="col-5 mt search-input">
                             <span><i class="fa fa-search" aria-hidden="true"></i></span>
                             <input type="text" placeholder="Поиск по заявкам">
                         </div>
-                        <div class="col-5  ml-auto period_of_application mt" style="margin-right: -50px">
+                        <div class="col-5 ml-auto period_of_application mt" style="margin-right: -50px">
                             <span>Дата создания заявки: &nbsp;от </span>
                             <input type="text" id="data-start">
                             <span>&nbsp; до</span>
@@ -342,7 +343,22 @@
                         </div>
                         <div class="col-12 mt">
                         </div>
-                        <div class="col-4 ml-auto applications_select">
+                        <div class="col-7 pagination_block">
+                            <a href="#" class="pagination__arrow"><i class="fa fa-angle-double-left"
+                                                                     aria-hidden="true"></i></a>
+                            <a href="#" class="pagination__arrow"><i class="fa fa-angle-left"
+                                                                     aria-hidden="true"></i></a>
+                            <a href="#" class="pagination__link">1</a>
+                            <a href="#" class="pagination__link">2</a>
+                            <a href="#" class="pagination__link active">3</a>
+                            <span class="pagination__dots">...</span>
+                            <a href="#" class="pagination__link" style="margin-right: 15px">10</a>
+                            <a href="#" class="pagination__arrow"><i class="fa fa-angle-right"
+                                                                     aria-hidden="true"></i></a>
+                            <a href="#" class="pagination__arrow"><i class="fa fa-angle-double-right"
+                                                                     aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-5  applications_select">
                             <span>Количество позиций на страницу:</span>
                             <select class="">
                                 <option value="1" selected>10</option>

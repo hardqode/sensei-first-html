@@ -173,13 +173,13 @@
                                     <span>Ежемес. платеж 51650 руб.</span>
                                     <span>Действует до 25.05.2022</span>
                                 </div>
-                                <button class="btn btn-outline-dark mt w20">Редактировать</button>
+                                <button class="btn btn-outline-dark mt w20" id="edit_table">Редактировать</button>
                                 <button class="btn btn-outline-dark mt w20" disabled>Оценка</button>
                                 <button class="btn btn-outline-dark mt w20" disabled>Страховка</button>
                                 <button class="btn btn-outline-dark mt w20">Пользователи</button>
                             </div>
                             <div class="col-2" style="text-align:right;">
-                                <button class="navigation_burger_button ml-auto" id="status_btn"><i
+                                <button class="navigation_burger_button ml-auto"><i
                                         class="material-icons">menu</i></button>
                                 <ul class="list-group progress_list" id="list_of_progress">
                                     <li class="list-group-item">Проверена КС</li>
@@ -192,7 +192,7 @@
                                     <tbody>
                                     <tr>
                                         <td>Ф.И.О.</td>
-                                        <td>Иванов Иван Иванович</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td>Дата рождения</td>
@@ -869,7 +869,6 @@
 <script src="js/jquery.barrating.min.js"></script>
 <script src="js/initRating.js"></script>
 <script>
-
     $(function () {
         var $menu = $("#menu");
         $line = $("#line"),
