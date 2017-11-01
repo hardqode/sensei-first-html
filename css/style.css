@@ -358,17 +358,28 @@ button {
     padding-bottom: 0;
     margin-bottom: 10px !important;
 }
+
 #active_sub_menu:after {
     content: close-quote;
     position: absolute;
     display: inherit;
     top: 7px;
-    right:-4px;
-    height: 80%;
+    right: -4px;
+    height: 73%;
     width: 3px;
     background: #8caaf3;
 }
-.closed_sub#active_sub_menu:after{
+.opened_sub #active_sub_menu:after{
+    content: close-quote;
+    position: absolute;
+    /* display: inherit; */
+    top: 7px;
+    right: -4px;
+    height: 30%;
+    width: 3px;
+    background: #8caaf3;
+}
+.closed_sub#active_sub_menu:after {
     content: close-quote;
     position: absolute;
     display: inherit;
@@ -379,23 +390,38 @@ button {
     background: #8caaf3;
 }
 .sub_menu-icon{
-    position: relative;
+    cursor: pointer;
 }
-.sub_menu-icon img{
+.sub_menu-icon img {
     position: relative;
-    top: 27px;
-    z-index: 3;
+    z-index: 1;
+}
+
+.sub_menu-name {
+    font-size: 14px;
+    font-family: "Circe";
+    color: rgb(112, 111, 111);
+    line-height: 1.286;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.closed_sub .sub_menu-name {
+    margin-top: 15px;
+}
+.opened_sub .sub_menu-name{
+    margin-top: 9px;
 }
 .sub_menu-item {
-    position: relative;
-    background-color: white;
     padding: 16px;
-    min-height:90px;
+    position: relative;
 }
+
 .active_circle {
     top: 17px;
     padding: 9px;
-    z-index: 2;
+    z-index: 0;
     border-radius: 100%;
     position: absolute;
     left: 0.9%;
@@ -405,52 +431,72 @@ button {
     height: 44px;
     background-color: #8caaf3;
 }
-.closed_sub  .active_circle{
+
+.closed_sub .active_circle {
     padding: 9px;
-    z-index: 2;
     border-radius: 100%;
     position: absolute;
-    left: 22%;
+    left: 23.6%;
     right: inherit !important;
     margin-left: 0px !important;
     height: 44px;
     background-color: #8caaf3;
     min-width: 44px;
-    top:0;
+    top: -8px;
 }
-.closed_sub .sub_menu-icon img{
-    position: relative;
-    top: 10px;
-    z-index: 3;
-}
-.opened_sub #active_sub_menu  .sub_menu_name{
-    bottom:20px;
-}
-.opened_sub #active_sub_menu:after{
-    content: close-quote;
-    position: absolute;
-    display: inherit;
-    top: 30px;
-    right: -4px;
-    height: 57%;
-    width: 3px;
-    background: #8caaf3;
-}
-.opened_sub .sub_menu_list {
+
+/*.closed_sub .sub_menu-icon img{*/
+/*position: relative;*/
+/*top: 10px;*/
+/*z-index: 3;*/
+/*}*/
+/*.opened_sub #active_sub_menu  .sub_menu_name{*/
+/*bottom:20px;*/
+/*}*/
+/*.opened_sub #active_sub_menu:after{*/
+/*content: close-quote;*/
+/*position: absolute;*/
+/*display: inherit;*/
+/*top: 30px;*/
+/*right: -4px;*/
+/*height: 57%;*/
+/*width: 3px;*/
+/*background: #8caaf3;*/
+/*}*/
+/*.opened_sub .sub_menu_list {*/
+/*font-size: 12px;*/
+/*font-family: "Circe";*/
+/*color: rgb(112, 112, 112);*/
+/*line-height: 1.5;*/
+/*text-align: center;*/
+/*position: relative;*/
+/*left: -10px;*/
+/*top: 13px;*/
+/*}*/
+.sub_menu_list {
     font-size: 12px;
     font-family: "Circe";
     color: rgb(112, 112, 112);
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
     position: relative;
     left: -10px;
     top: 13px;
 }
-.closed_sub .sub_menu_list{
+.sub_menu_list{
+    cursor: pointer;
+}
+.sub_menu_list li:hover{
+    color: #00aced;
+}
+
+.closed_sub .sub_menu_list {
     display: none;
 }
-.sub_menu_list ul li{
+
+.sub_menu_list ul li {
     white-space: nowrap;
+    margin-bottom: 5px;
 }
 
 .btn-outline-secondary {
@@ -1197,13 +1243,14 @@ button {
     max-width: 155px;
     padding-bottom: 10px;
     flex: 0 1 auto;
+    text-align: center;
+    background: white;
 }
 
 .sub_menu *:hover, *:focus {
     text-decoration: none;
 
 }
-
 
 .sub_menu_name {
     position: absolute;
@@ -1217,10 +1264,8 @@ button {
     text-align: center;
     color: #707070;
     margin: 0 auto;
+    cursor: pointer;
 }
-
-
-
 
 .divider_with_border {
     margin-left: 3%;
@@ -2388,11 +2433,11 @@ button {
 }
 
 .opened_sub .active_circle {
-    top: 17px;
-    z-index: 2;
+    top: -7px;
+    z-index: 0;
     border-radius: 100%;
     position: absolute;
-    left: 0.9%;
+    left: 3.9%;
     right: inherit !important;
     margin-left: 6px !important;
     width: 44px;
